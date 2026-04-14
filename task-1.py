@@ -6,7 +6,7 @@ def string_to_date(date_string):
 def get_days_from_today(date):
 
     try:
-        today =  datetime.today().date()
+        today = datetime.today().date()
         print(f"Today is: {today}")
 
         given_date = string_to_date(date)
@@ -18,8 +18,6 @@ def get_days_from_today(date):
     except ValueError:
         print("Invalid date format. Use YYYY-MM-DD")
 
-
-# get_days_from_today("2021-10-09")
 
 user_input = input("Enter date in (YYYY-MM-DD) format: ")
 result = get_days_from_today(user_input)
